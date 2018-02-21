@@ -1,0 +1,35 @@
+{
+
+  "manifest_version": 2,
+  "name": "Yotube speed changer",
+  "version": "1.0",
+
+  "description": "Now you can change the playback speed of the videos on youtube (more than 2x)",
+
+  "icons": {
+    "48": "icon/border-48.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "kotdusic@gmail.com",
+      "strict_min_version": "45.0"
+    }
+  },
+  
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "images/border-48.png",
+    "default_title": "Yotube speed changer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "web_accessible_resources": [
+  ]
+}

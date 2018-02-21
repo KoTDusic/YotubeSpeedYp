@@ -1,0 +1,33 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+  
+        {
+            "name": "Launch localhost",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "https://www.youtube.com/watch?v=VTIaKOWEDRY",
+            "webRoot": "${workspaceFolder}/yotube/html"
+        },
+
+        {
+            "name": "Attach",
+            "type": "firefox",
+            "request": "attach",
+            "sourceMaps": "client"
+        },
+        {
+            "name": "Launch addon",
+            
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "addonType": "webExtension",
+            "addonPath": "${workspaceFolder}/yotube"
+        }
+    ]
+}
